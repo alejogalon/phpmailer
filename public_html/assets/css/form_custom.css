@@ -1,0 +1,88 @@
+body .customer .white-block p span {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+}
+body .customer .white-block p a {
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #124FB3;
+}
+body .customer .white-block p:first-child {
+  margin-left: 167px;
+}
+body .customer .white-block p {
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 53px;
+}
+
+body .customer .white-block .cc-mail {
+  margin-top: 3px;
+}
+body .customer .white-block p:first-child {
+  margin-left: 167px;
+}
+body .customer .white-block p {
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 53px;
+}
+body .customer .white-block {
+  width: 1000px;
+  margin: 11px auto 0;
+  display: flex;
+  background: #fff;
+  padding: 21px 0 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+p.cc-tel.mobile { display: none }
+@media screen and (max-width: 767px) {
+  p.cc-tel.mobile { display: block }
+  p.cc-tel.desktop { display: none !important }
+  body .customer .white-block {
+      width: 83.2vw;
+      margin: 3.7333333333vw auto 0;
+      display: block;
+      background: #fff;
+      padding: 5.8666666667vw 0;
+      border-radius: 3.2vw;
+  }
+  body .customer .white-block p:first-child {
+      margin-left: 0;
+  }
+  body .customer .white-block p span {
+      font-size: 5.8666666667vw;
+      line-height: 1.15;
+  }
+  body .customer .white-block .cc-mail {
+      margin-top: 0;
+  }
+  body .customer .white-block p + p {
+      padding-top: 2.4vw;
+  }
+  body .customer .white-block p {
+      margin-left: 0;
+      font-size: 3.7333333333vw;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 5.0666666667vw;
+      padding-top: 0.8vw;
+  }
+  body .customer .white-block p a {
+      font-size: 3.7333333333vw;
+  }
+  body .customer .white-block p a.text-link:first-child {
+      font-size: 5.8666666667vw;
+      line-height: 1.15;
+      font-style: normal;
+      font-weight: 700;
+      text-decoration: none;
+  }
+}

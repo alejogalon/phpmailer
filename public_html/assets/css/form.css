@@ -1,0 +1,707 @@
+@charset "UTF-8";
+/* Webフォントを定義 */
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+.pc_display {
+  display: block;
+}
+
+.sp_display {
+  display: none;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 1.8rem;
+}
+body .form-contents {
+  width: 648px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+body .form-contents form {
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+body .form-contents form dl dt {
+  margin-bottom: 7px;
+  text-edge: cap;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 24px */
+}
+body .form-contents form dl dd {
+  margin-bottom: 45px;
+}
+body .form-contents form dl dd input {
+  background: #F9F9F9;
+  width: 100%;
+  padding: 18px 0 18px 20px;
+  border-radius: 10px;
+  border: 1px solid #F9F9F9;
+}
+body .form-contents form dl dd input.form-error {
+  border: 1px solid #FFBFBF;
+  background: #FFF7F7;
+}
+body .form-contents form dl dd .formAlertTop {
+  margin-top: 6px;
+  padding-left: 17px;
+  background: url("/assets/img/form/warning.svg") left top no-repeat;
+}
+body .form-contents form dl dd .formAlertTop .formAlertBody {
+  font-size: 1.3rem;
+  color: #A60000;
+}
+body .form-contents form dl dd .inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .form-contents form dl dd .inner-wrap select {
+  height: 60px;
+  padding: 8px 20px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  width: 230px;
+  background: #FFF url("/assets/img/form/arrow.svg") no-repeat 92% center;
+}
+body .form-contents form dl dd .inner-wrap #phoneNumber {
+  height: 60px;
+  padding: 8px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 8px;
+  background: #F9F9F9;
+  margin-left: 20px;
+  width: 400px;
+}
+body .form-contents form dl dd .inner-wrap #phoneNumber.form-error {
+  border: 1px solid #FFBFBF;
+  background: #FFF7F7;
+}
+body .form-contents form dl dd #products, body .form-contents form dl dd #issues {
+  height: 60px;
+  padding: 8px 20px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #F9F9F9;
+  background: #F9F9F9 url("/assets/img/form/arrow.svg") no-repeat 97% center;
+}
+body .form-contents form dl dd #products.form-error, body .form-contents form dl dd #issues.form-error {
+  border: 1px solid #FFBFBF;
+  background: #FFF7F7 url("/assets/img/form/arrow-red.svg") no-repeat 97% center;
+}
+body .form-contents form dl dd textarea {
+  width: 100%;
+  height: 200px;
+  background: #F9F9F9;
+  border: 1px solid #F9F9F9;
+  padding: 20px;
+}
+body .form-contents form dl dd textarea.form-error {
+  border: 1px solid #FFBFBF;
+  background: #FFF7F7;
+}
+body .form-contents form input[type=submit]:disabled {
+  width: 472px;
+  display: block;
+  margin: 80px auto 0;
+  color: #404040;
+  background-color: #D9D9D9;
+  padding: 26px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 2.4rem;
+  text-align: center;
+}
+body .form-contents form input[type=submit] {
+  width: 472px;
+  display: block;
+  margin: 80px auto 0;
+  background-color: #124FB3;
+  color: #fff;
+  padding: 26px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 2.4rem;
+  text-align: center;
+}
+body .form-contents form .kiyaku {
+  font-size: 1.4rem;
+  margin-top: 70px;
+  /* 未チェック時の画像 */
+  /* チェック時の画像 */
+  /* チェックボックスを非表示にする */
+}
+body .form-contents form .kiyaku a {
+  color: #124FB3;
+  padding-bottom: 0.25em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3569be), to(#3569be)) 0 100%/100% 1px no-repeat;
+  background: linear-gradient(#3569be, #3569be) 0 100%/100% 1px no-repeat;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+body .form-contents form .kiyaku a:hover {
+  -webkit-animation: textLineHover 0.5s;
+          animation: textLineHover 0.5s;
+}
+body .form-contents form .kiyaku label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .form-contents form .kiyaku label .chk-box-parts {
+  padding-left: 12px;
+}
+body .form-contents form .kiyaku .chkForm.chkAgree.chk-box + .chk-box-parts {
+  background-image: url("/assets/img/form/unchecked-checkbox.png");
+  /* 未チェック時の画像パス */
+  padding-left: 35px;
+  /* 画像の幅に応じて調整 */
+  padding: 3px 0 3px 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+}
+body .form-contents form .kiyaku .chkForm.chkAgree.chk-box.form-error + .chk-box-parts {
+  background-image: url("/assets/img/form/unchecked-checkbox-error.png");
+  /* 未チェック時の画像パス */
+}
+body .form-contents form .kiyaku .chkForm.chkAgree.chk-box:checked + .chk-box-parts {
+  background-image: url("/assets/img/form/checked-checkbox.png");
+  /* チェック時の画像パス */
+  background-size: 24px;
+}
+body .form-contents form .kiyaku .formAlertTop {
+  margin-top: 6px;
+  padding-left: 17px;
+  background: url("/assets/img/form/warning.svg") left top no-repeat;
+}
+body .form-contents form .kiyaku .formAlertTop .formAlertBody {
+  font-size: 1.3rem;
+  color: #A60000;
+}
+body .form-contents form .kiyaku #kiyaku {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+}
+body .form-contents form .form-error::-webkit-input-placeholder {
+  /* ほとんどのモダンブラウザ用 */
+  color: #A60000;
+}
+body .form-contents form .form-error::-moz-placeholder {
+  /* ほとんどのモダンブラウザ用 */
+  color: #A60000;
+}
+body .form-contents form .form-error:-ms-input-placeholder {
+  /* ほとんどのモダンブラウザ用 */
+  color: #A60000;
+}
+body .form-contents form .form-error::-ms-input-placeholder {
+  /* ほとんどのモダンブラウザ用 */
+  color: #A60000;
+}
+body .form-contents form .form-error::placeholder {
+  /* ほとんどのモダンブラウザ用 */
+  color: #A60000;
+}
+body .form-contents form .form-error::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #A60000;
+}
+body .form-contents form select.form-error {
+  color: #A60000;
+  opacity: 0.6;
+}
+body .form-contents.confirm form dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .form-contents.confirm form dl dt {
+  margin: 0 12px 0 0;
+  border-top: 1px solid #124FB3;
+  width: 200px;
+  padding-top: 21px;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+body .form-contents.confirm form dl dd {
+  width: 434px;
+  margin-bottom: 0;
+  border-top: 1px solid #D9D9D9;
+  overflow-wrap: break-word;
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
+body .form-contents.confirm form .end dt {
+  border-bottom: 1px solid #124FB3;
+}
+body .form-contents.confirm form .end dd {
+  border-bottom: 1px solid #D9D9D9;
+}
+body .form-contents.thanks {
+  padding-top: 105px;
+  padding-bottom: 120px;
+}
+body .form-contents.thanks h2 {
+  font-family: Inter;
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 62.4px */
+  letter-spacing: -1.04px;
+  text-align: center;
+  color: #124FB3;
+}
+body .form-contents.thanks .thanks-txt {
+  color: var(--text-main, #000);
+  text-align: center;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+  padding-top: 23px;
+}
+body .form-contents.thanks .btn {
+  margin-top: 76px;
+}
+body .form-contents.thanks .btn a {
+  display: block;
+  width: 472px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid rgba(6, 95, 212, 0.5);
+  color: #124FB3;
+  padding: 21px 0;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+body .form-contents.consumables {
+  padding-top: 68px;
+}
+body .form-contents.consumables .consumables-tlt {
+  color: #124FB3;
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 62.4px */
+  letter-spacing: -1.04px;
+  margin-bottom: 27px;
+}
+body .form-contents.consumables .consumables-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 103px;
+}
+body .form-contents.consumables .consumables-block .left .tlt, body .form-contents.consumables .consumables-block .right .tlt {
+  color: #000;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 28.8px */
+  margin-top: 10px;
+}
+body .form-contents.consumables .consumables-block .left .price, body .form-contents.consumables .consumables-block .right .price {
+  color: #000;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+}
+body .form-contents.consumables .consumables-block .left .price span, body .form-contents.consumables .consumables-block .right .price span {
+  color: #535353;
+  text-edge: cap;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132%;
+  /* 17.16px */
+  padding-right: 13px;
+}
+body .form-contents.consumables .consumables-block .left .txt, body .form-contents.consumables .consumables-block .right .txt {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132%;
+  /* 17.16px */
+  margin-top: 14px;
+}
+body .form-contents.consumables .consumables-block .right {
+  margin-left: 56px;
+}
+body .form-contents.consumables .consumables-block .right ul {
+  margin-top: 14px;
+  padding-left: 19px;
+}
+body .form-contents.consumables .consumables-block .right ul li {
+  color: var(--Black, #000);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132%;
+  /* 17.16px */
+  list-style: disc;
+}
+body .customer {
+  background: #F9F9F9;
+  padding: 80px 0;
+}
+body .customer h2 {
+  color: #124FB3;
+  font-size: 3.6rem;
+  width: 648px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+body .customer .white-block {
+  width: 648px;
+  margin: 18px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  padding: 15px 0;
+  border-radius: 12px;
+}
+body .customer .white-block p {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 42px;
+}
+body .customer .white-block p:first-child {
+  margin-left: 91px;
+}
+body .customer .white-block p span {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+}
+body .customer .white-block p a {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #124FB3;
+}
+
+@media screen and (max-width: 767px) {
+  .pc_display {
+    display: none;
+  }
+  .sp_display {
+    display: block;
+  }
+  body .form-contents {
+    width: 83.2vw;
+    padding-top: 9.3333333333vw;
+  }
+  body .form-contents p {
+    font-size: 4.2666666667vw;
+    line-height: 140%;
+    /* 22.4px */
+  }
+  body .form-contents form {
+    margin-top: 7.7333333333vw;
+    padding-bottom: 21.3333333333vw;
+  }
+  body .form-contents form dl dt {
+    margin-bottom: 1.8666666667vw;
+    font-size: 5.3333333333vw;
+  }
+  body .form-contents form dl dd {
+    margin-bottom: 5.6vw;
+  }
+  body .form-contents form dl dd input {
+    padding: 4.8vw 0 4.8vw 5.3333333333vw;
+    border-radius: 2.6666666667vw;
+  }
+  body .form-contents form dl dd .inner-wrap select {
+    height: 16vw;
+    padding: 2.1333333333vw 5.3333333333vw;
+    border-radius: 2.1333333333vw;
+    width: 32vw;
+    background: #FFF url("/assets/img/form/arrow.svg") no-repeat 82% center;
+  }
+  body .form-contents form dl dd .inner-wrap #phoneNumber {
+    height: 16vw;
+    padding: 2.1333333333vw 5.3333333333vw;
+    margin-left: 5.3333333333vw;
+    width: 45.8666666667vw;
+  }
+  body .form-contents form dl dd #products, body .form-contents form dl dd #issues {
+    height: 16vw;
+    padding: 2.1333333333vw 5.3333333333vw;
+    border-radius: 2.1333333333vw;
+    background: #F9F9F9 url("/assets/img/form/arrow.svg") no-repeat 94% center;
+  }
+  body .form-contents form .kiyaku {
+    font-size: 3.7333333333vw;
+    margin-top: 0;
+  }
+  body .form-contents form .kiyaku.consumables {
+    margin-top: 2.6666666667vw;
+  }
+  body .form-contents form input[type=submit]:disabled {
+    width: 83.2vw;
+    display: block;
+    margin: 10.1333333333vw auto 0;
+    color: #404040;
+    background-color: #D9D9D9;
+    padding: 4.8vw 6.4vw;
+    border: none;
+    border-radius: 3.2vw;
+    cursor: pointer;
+    font-size: 5.3333333333vw;
+    text-align: center;
+  }
+  body .form-contents form input[type=submit] {
+    width: 83.2vw;
+    display: block;
+    margin: 10.1333333333vw auto 0;
+    background-color: #124FB3;
+    color: #fff;
+    padding: 4.8vw 6.4vw;
+    border: none;
+    border-radius: 3.2vw;
+    cursor: pointer;
+    font-size: 5.3333333333vw;
+    text-align: center;
+  }
+  body .form-contents.confirm form {
+    margin-top: 9.0666666667vw;
+  }
+  body .form-contents.confirm form dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .form-contents.confirm form dl dt {
+    margin: 0 2.1333333333vw 0 0;
+    border-top: 1px solid #124FB3;
+    width: 34.1333333333vw;
+    font-weight: normal;
+    font-size: 4.2666666667vw;
+    padding-top: 4vw;
+    padding-bottom: 3.4666666667vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .form-contents.confirm form dl dd {
+    width: 46.9333333333vw;
+    margin-bottom: 0;
+    border-top: 1px solid #D9D9D9;
+    overflow-wrap: break-word;
+    font-size: 4.2666666667vw;
+    line-height: 140%;
+    /* 22.4px */
+    padding-top: 3.7333333333vw;
+    padding-bottom: 2.9333333333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    word-break: break-all;
+  }
+  body .form-contents.confirm form .end dt {
+    border-bottom: 1px solid #124FB3;
+  }
+  body .form-contents.confirm form .end dd {
+    border-bottom: 1px solid #D9D9D9;
+  }
+  body .form-contents.confirm form input[type=submit] {
+    margin-top: 10.6666666667vw;
+  }
+  body .form-contents.thanks {
+    padding-top: 33px;
+    padding-bottom: 80px;
+  }
+  body .form-contents.thanks h2 {
+    color: var(--PrimaryBlue, #124FB3);
+    text-align: center;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 44px */
+    letter-spacing: -0.88px;
+  }
+  body .form-contents.thanks .thanks-txt {
+    color: #000;
+    text-align: center;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    padding-top: 28px;
+  }
+  body .form-contents.thanks .btn {
+    margin-top: 34px;
+  }
+  body .form-contents.thanks .btn a {
+    display: block;
+    width: 312px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(6, 95, 212, 0.5);
+    color: #124FB3;
+    padding: 17px 0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  body .form-contents.consumables {
+    padding-top: 9.3333333333vw;
+  }
+  body .form-contents.consumables .consumables-tlt {
+    color: #124FB3;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 44px */
+    letter-spacing: -0.88px;
+  }
+  body .form-contents.consumables .consumables-tlt.inq {
+    margin-bottom: 10px;
+  }
+  body .form-contents.consumables .consumables-block {
+    display: block;
+    margin-bottom: 68px;
+  }
+  body .form-contents.consumables .consumables-block .left .tlt, body .form-contents.consumables .consumables-block .right .tlt {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    margin-top: 7px;
+  }
+  body .form-contents.consumables .consumables-block .left .price, body .form-contents.consumables .consumables-block .right .price {
+    color: #000;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+  }
+  body .form-contents.consumables .consumables-block .left .price span, body .form-contents.consumables .consumables-block .right .price span {
+    color: #535353;
+    text-edge: cap;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+    /* 17.16px */
+    padding-right: 13px;
+  }
+  body .form-contents.consumables .consumables-block .left .txt, body .form-contents.consumables .consumables-block .right .txt {
+    color: #000;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+    margin-top: 5px;
+  }
+  body .form-contents.consumables .consumables-block .right {
+    margin-left: 0px;
+    margin-top: 36px;
+  }
+  body .form-contents.consumables .consumables-block .right ul {
+    margin-top: 8px;
+    padding-left: 19px;
+  }
+  body .form-contents.consumables .consumables-block .right ul li {
+    color: var(--Black, #000);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+    list-style: disc;
+  }
+  body .customer {
+    padding: 21.3333333333vw 0;
+  }
+  body .customer h2 {
+    text-align: center;
+    width: auto;
+    font-size: 7.4666666667vw;
+    letter-spacing: -0.56px;
+  }
+  body .customer .white-block {
+    width: 83.2vw;
+    margin: 6.9333333333vw auto 0;
+    display: block;
+    background: #fff;
+    padding: 4vw 0;
+    border-radius: 3.2vw;
+  }
+  body .customer .white-block p {
+    margin-left: 0;
+    font-size: 4.2666666667vw;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 6.6666666667vw;
+    padding-top: 1.8666666667vw;
+  }
+  body .customer .white-block p:first-child {
+    margin-left: 0;
+  }
+  body .customer .white-block p span {
+    font-size: 5.3333333333vw;
+  }
+  body .customer .white-block p a {
+    font-size: 3.7333333333vw;
+  }
+}
